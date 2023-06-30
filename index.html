@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Google Sheets API</title>
+  </head>
+  <body>
+    <h1>Google Sheets</h1>
+    <form
+      method="POST"
+      action="https://script.google.com/macros/s/AKfycbwvgN-miulC_5T60M4UxIB8d603ytyISYIem3m0msBEebBZIch9vaIgmgTUKM4_HtNM/exec"
+      id="submit__form"
+    >
+      <div class="form__field">
+        <label for="email">Email</label>
+        <input
+          name="Email"
+          type="email"
+          placeholder="Email"
+          required
+          id="email"
+        />
+      </div>
+
+      <div class="form__field">
+        <label for="name">Full Name</label>
+        <input name="Name" type="text" placeholder="Name" required id="name" />
+      </div>
+      <div class="form__field">
+        <label for="age">Age</label>
+        <input name="Age" type="number" placeholder="Age" required id="age" />
+      </div>
+      <div class="form__field">
+        <label for="loc">Location</label>
+        <input
+          name="Location"
+          type="text"
+          placeholder="Location"
+          required
+          id="loc"
+        />
+      </div>
+      <div class="form__field">
+        <label for="dep">Department</label>
+        <input
+          name="Department"
+          type="text"
+          placeholder="Department"
+          required
+          id="dep"
+        />
+      </div>
+      <button type="submit" id="submit__button">Send</button>
+    </form>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
